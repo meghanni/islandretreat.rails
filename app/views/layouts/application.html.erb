@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Island Retreat Holiday Cottage | <%= @title %>" </title>
+    <title><%= title %></title>
     <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   </head>
   <body>
-    <%= yield %>
+
+    <div id="wrap">
+      <div id="header">
+        <%= render 'layouts/header' %>
+      </div>
+
+      <div id="navtmp">
+        
+      </div>
+
+      <div id="nav">
+      <%= render 'layouts/menu' %>
+      </div>
+
+      <div id="main">
+        <h1><%= @title %></h1>
+        <%= yield %>
+      </div>
+      <div id="footer">
+        <%= render 'layouts/footer' %>
+      </div>
+    </div>
+    
   </body>
 </html>
+
+
 

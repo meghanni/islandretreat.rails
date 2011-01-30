@@ -14,7 +14,7 @@ describe PagesController do
     it "should have the right title" do
       get 'home'
       response.should have_selector("title",
-                        :content => "Island Retreat Holiday Cottage | Home")
+                        :content => "Island Retreat Holiday Cottage | Island Retreat")
     end
 
   end
@@ -31,7 +31,7 @@ describe PagesController do
     it "should have the right title" do
       get 'contact'
       response.should have_selector("title",
-                        :content => "Island Retreat Holiday Cottage | Contact")
+                        :content => "Island Retreat Holiday Cottage | Contact Us")
     end
 
   end
@@ -48,7 +48,7 @@ describe PagesController do
     it "should have the right title" do
       get 'about'
       response.should have_selector("title",
-                        :content => "Island Retreat Holiday Cottage | About")
+                        :content => "Island Retreat Holiday Cottage | About Us")
     end
   end
 

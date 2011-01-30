@@ -1,9 +1,14 @@
 Islandretreat::Application.routes.draw do
-  get "pages/home"
+  match '/contact', :to => 'pages#contact'
+  match '/about', :to => 'pages#about'
+  match '/accommodation', :to => 'pages#accommodation'
+  match '/faq', :to => 'pages#faq'
+  match '/visitors_book', :to => 'pages#visitors_book'
+  match '/local_information', :to => 'pages#local_information'
+  match '/rates', :to => 'pages#rates'
+ 
+  root :to => 'pages#home'
 
-  get "pages/contact"
-
-  get "pages/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

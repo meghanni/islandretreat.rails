@@ -8,7 +8,7 @@ Islandretreat::Application.routes.draw do
   match '/rates', :to => 'pages#rates'
 
   #temporary
-  match '/import', :to => 'pages#import'
+  #match '/import', :to => 'pages#import'
 
   root :to => 'pages#home'
 

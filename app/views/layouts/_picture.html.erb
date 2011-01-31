@@ -1,0 +1,35 @@
+<% if @title == "Home" %>
+
+<%= image_tag("front.jpg", :alt => "Front View of Island Retreat") %>
+<%= image_tag("garden.jpg", :alt => "Rear Garden of Island Retreat") %>
+<%= image_tag("map.gif", :alt => "Location of Island Retreat") %>
+
+<% end %>
+
+
+<% if @title == "Accommodation" %>
+
+<%= image_tag("lounge.jpg", :alt => "Lounge of Island Retreat") %>
+<%= image_tag("kitchen.jpg", :alt => "Kitchen of Island Retreat") %>
+<%= image_tag("double.jpg", :alt => "Double Bedroom of Island Retreat") %>
+<%= image_tag("twin.jpg", :alt => "Twin Bedroom of Island Retreat") %>
+
+<% end %>
+
+
+<% if @title == "FAQ" or @title == "Visitor's Book" or @title == "Rates" or @title == "Contact" or @title == "About" %>
+
+<%= image_tag("front.jpg", :alt => "Front View of Island Retreat") %>
+<%= image_tag("garden.jpg", :alt => "Rear Garden of Island Retreat") %>
+
+<% end %>
+
+
+<% if @title == "Local Information" %>
+
+<%= image_tag("needles.jpg", :alt => "The Needles") %>
+<%= image_tag("godshill.jpg", :alt => "Godshill Village") %>
+<%= image_tag("freshwater_bay.jpg", :alt => "Freshwater Bay") %>
+<%= image_tag("ryde_seafront.jpg", :alt => "Ryde Beach") %>
+
+<% end %>

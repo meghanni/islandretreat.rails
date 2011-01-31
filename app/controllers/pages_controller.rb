@@ -27,6 +27,7 @@ class PagesController < ApplicationController
   def visitors_book
     @title = "Visitor's Book"
     @header = "Visitor's Book"
+    @visitors = Visitor.find(:all, :order => "id DESC")
   end
 
   def local_information

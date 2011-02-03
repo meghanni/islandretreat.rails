@@ -132,4 +132,52 @@ describe PagesController do
     end
   end
 
+  describe "GET 'privacy'" do
+
+    #presence of page
+    it "should be successful" do
+      get 'privacy'
+      response.should be_success
+    end
+
+    #titles
+    it "should have the right title" do
+      get 'privacy'
+      response.should have_selector("title",
+                        :content => "Island Retreat Holiday Cottage | Privacy")
+    end
+  end
+
+  describe "GET 'terms'" do
+
+    #presence of page
+    it "should be successful" do
+      get 'terms'
+      response.should be_success
+    end
+
+    #titles
+    it "should have the right title" do
+      get 'terms'
+      response.should have_selector("title",
+                        :content => "Island Retreat Holiday Cottage | Terms")
+    end
+  end
+
+  describe "GET 'availability'" do
+
+    #presence of page
+    it "should be successful" do
+      get 'availability'
+      response.should be_success
+    end
+
+    #titles
+    it "should have the right title" do
+      get 'availability'
+      response.should have_selector("title",
+                        :content => "Island Retreat Holiday Cottage | Availability")
+    end
+  end
+
 end

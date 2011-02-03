@@ -40,4 +40,20 @@ class PagesController < ApplicationController
     @header = "Rates"
   end
 
+  def privacy
+    @title = "Privacy"
+    @header = "Privacy Policy Statement"
+  end
+
+  def terms
+    @title = "Terms"
+    @header = "Terms of Service"
+  end
+
+  def availability
+    @title = "Availability"
+    @header = "Availability"
+  end
+
+
 end

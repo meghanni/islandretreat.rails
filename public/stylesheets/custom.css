@@ -6,8 +6,8 @@ body {
 	background:#ffffff;
 	min-width:600px;		/* Minimum width of layout - remove line if not required */
 					/* The min-width property does not work in old versions of Internet Explorer */
-	font-size:90%;
-  font: 100% Verdana, Arial, Helvetica, sans-serif;
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	font: 87% Verdana, Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -148,10 +148,13 @@ img {
 }
 
 .col3 img {
-	margin-top:-3px;
+	margin-top:0px;
 	
 }
 
+.col1 h1 {
+	color:#24ADCD;
+}
 
 
 
@@ -210,5 +213,6 @@ img {
 	padding:10px;
 	margin:0;
 	text-align: center;
+	font-size: smaller;
 	
 }

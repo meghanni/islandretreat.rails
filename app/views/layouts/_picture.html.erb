@@ -1,4 +1,4 @@
-<% if @title == "Accommodation" %>
+<% if @title == "Accommodation" or @title == "Availability" %>
 
   <p><%= lounge_text %></p> <%= lounge_image %>
   <p><%= kitchen_text %></p> <%= kitchen_image %>
@@ -8,7 +8,7 @@
 <% end %>
 
 
-<% if @title == "Home" or @title == "FAQ" or @title == "Visitor's Book" or @title == "Rates" or @title == "Contact" or @title == "About" %>
+<% if @title == "Home" or @title == "FAQ" or @title == "Visitor's Book" or @title == "Rates" or @title == "Contact" or @title == "About" or @title == "Privacy" or @title == "Terms" %>
 
   <p><%= front_text %></p> <%= front_image %>
   <p><%= rear_garden_text %></p> <%= rear_garden_image %>

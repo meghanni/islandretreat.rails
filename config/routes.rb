@@ -6,6 +6,9 @@ Islandretreat::Application.routes.draw do
   match '/visitors_book', :to => 'pages#visitors_book'
   match '/local_information', :to => 'pages#local_information'
   match '/rates', :to => 'pages#rates'
+  match '/privacy', :to => 'pages#privacy'
+  match '/terms', :to => 'pages#terms'
+  match '/availability', :to => 'pages#availability'
 
   #temporary
   #match '/import', :to => 'pages#import'

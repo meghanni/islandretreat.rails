@@ -1,0 +1,3 @@
+#! /bin/bash
+# script to run rails server for island retreat on port 3001
+rails s --port=3001

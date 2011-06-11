@@ -1,16 +1,32 @@
-<p>Island Retreat has been very busy this year, we are looking forward to welcoming many of our regular guests back in 2011.</p>
+ <div class="grbox largecol right">
+    <div id="visitors">
+    <h1>Visitor's Book</h1>
+    
+    <div id="scrollingpics" class="grbox noborder">
+    <%= render 'layouts/gallery' %>
+	</div>
 
-<table border="1" cellpadding="8">
+        <p>Island Retreat has been very busy this year, we are looking forward to welcoming many of our regular guests back in 2011.</p>
+        
+        <table>
+           
+          <% @visitors.each do |v| %>
+          <tr>
+            <td width="20%"><%= v.date %></td>
+            <td><%= v.comment %></td>
+          </tr>
+          <% end %>
 
 
-  <% @visitors.each do |v| %>
-  <tr>
-    <td><%= v.date %></td>
-    <td><%= v.comment %></td>
-  </tr>
-  <% end %>
+        </table>
+    </div>     
+</div>
 
-
-</table>
-      
+<div class="grbox smallcol left noborder">
+	<%= render 'layouts/pets' %>
+</div>
+  
+<div class="grbox smallcol left">
+    <%= render 'layouts/latestavailability' %>     
+</div>
 

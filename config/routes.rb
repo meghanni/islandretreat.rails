@@ -2,6 +2,7 @@ Islandretreat::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
   match '/accommodation', :to => 'pages#accommodation'
+  match '/location', :to => 'pages#location'
   match '/faq', :to => 'pages#faq'
   match '/visitors_book', :to => 'pages#visitors_book'
   match '/local_information', :to => 'pages#local_information'

@@ -1,42 +1,32 @@
-<p>
-Island Retreat is a holiday bunglalow located in Binstead near Ryde on the Isle of Wight and is available for holiday rentals all year round and short breaks at selected periods.
-</p>
+<div class="grbox noborder">
+    <p class="quote">"Excellent bungalow, everything has been thought of, even the weather has been excellent, our third visit and we have enjoyed it as much as   the first time." Roberts Party <%= link_to "read more ...", visitors_book_path %></p>
+</div>
 
-<p>
-'Island Retreat' is a single story detached bungalow which comfortably caters for four people. It has <strong>one double bedroom and one twin</strong> and has been described by many of its past <%= link_to "Visitors", visitors_book_path %> as 'home from home'.
-</p>
+<div class="grbox smallcol left noborder">
+  <%= render 'layouts/pets' %>
+</div>
 
-<p>
-Binstead is a quiet village in the northern part of the island and is a five minute drive away from Fishbourne car ferry terminal.</p>
 
-<p>
-The bungalow is ideal accommodation for all ages. The spacious garden is accessed by french doors from the kitchen and is fully enclosed. There is a large park with a children's playground at the back of the property, great for exercising pets (and children!). The bungalow is set a long way back from a very quiet residential road.
-</p>
-		<ul>
-			<li>comfortably caters for 4 people</li>
-			<li>located in a quiet residential area</li>
-			<li>set back from the road and backs onto a park with a children's play area </li>
-			<li>recently replaced kitchen/diner with french doors opening onto the garden 			
-			<li> spacious enclosed garden with patio and garden furniture</li>
-			<li> recently replaced bathroom including a bath with power shower over </li>
-			<li> all mod-cons including wide screen TV and DVD player  
-			<li>five minute drive from  Ryde beach and Fishbourne car ferry terminal</li>
-			<li>local shop, pub and post office within walking distance of the property </li>
-			<li>allocated parking</li>
-			<li>centrally heated </li>
-			<li>pets are welcome (dog bed is supplied) </li>
-			<li>no smoking allowed within the property </li>
-		</ul>
 
-		<div id="mainlink">
-			<ul>
-		  	<li><%= link_to "View the accommodation", accommodation_path %></li>
-	      <li><%= link_to "Find out about the local area", local_information_path %></li>
-		  	<!--<li><a href="availability.php?<?php echo SID?>">Check availability and book accommodation</a>.</li> -->
-		  </ul>
-		</div>
-        
-<p><%= link_to "Click here", faq_path %> for frequently asked questions. </p>
-			<p>For further information or for availability queries please <%= link_to "contact us", contact_path %>.</p>
-			
+<div class="grbox largecol right">
+	<%= render 'layouts/maininfo' %>		
+</div>
+
+<div class="grbox smallcol left noborder">
+  <h1>Island Retreat</h1>
+  <p><img src="/photos/P1010838.JPG" /></p>
+</div>
+
+
+ <div class="grbox smallcol left">
+     <%= render 'layouts/latestavailability' %>     
+ </div>
+
+ <div class="grbox smallcol left">
+     <%= render 'layouts/mailinglist' %>
+ </div>
+
+
+
+
 

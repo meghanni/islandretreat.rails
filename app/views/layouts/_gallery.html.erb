@@ -1,0 +1,69 @@
+<%= stylesheet_link_tag 'scrollable-horizontal.css', :media => 'screen' %>
+<%= stylesheet_link_tag 'scrollable-buttons.css', :media => 'screen' %>
+<%= stylesheet_link_tag 'scrollable-navigator.css', :media => 'screen' %>
+
+
+<!-- wrapper for navigator elements --> 
+<div class="navi"></div> 
+ 
+ 
+ 
+<!-- "previous page" action --> 
+<a class="prev browse left"></a> 
+ 
+<!-- root element for scrollable --> 
+<div class="scrollable" id=chained>   
+   
+   <!-- root element for the items --> 
+   <div class="items"> 
+   
+      <!-- 1-3 --> 
+      <div> 
+         <img src="/photos/P1010838.JPG" />
+	 <img src="/photos/P1010840.JPG" />
+         <img src="/photos/P1010860.JPG" />
+         <img src="/photos/P1010829.JPG" />
+         
+      </div> 
+      
+      <!-- 4-6 --> 
+      <div> 
+	 <img src="/photos/P1010858.JPG" />
+         <img src="/photos/P1010859.JPG" />
+         <img src="/photos/P1010822.JPG" />
+         <img src="/photos/P1010827.JPG" />
+      </div> 
+
+
+      <!-- 4-6 -->
+      <div>
+   	 <img src="/photos/P1010832.JPG" />
+         <img src="/photos/P1010834.JPG" />
+         <img src="/photos/P1010847.JPG" />
+         <img src="/photos/P1010848.JPG" />
+
+      </div>
+
+
+
+      
+   </div> 
+   
+</div> 
+ 
+<!-- "next page" action --> 
+<a class="next browse right"></a> 
+ 
+ 
+<br clear="all" /> 
+ 
+<!-- javascript coding --> 
+<script> 
+// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
+$(document).ready(function() {
+ 
+// heeeeeeeeeeere we go.
+$("#chained").scrollable({mousewheel: true}).navigator();	
+});
+</script> 
+ 

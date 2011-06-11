@@ -18,42 +18,49 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    
+
+	<!-- include the Tools --> 
+	<script src="/scripts/jquery.tools.min.js"></script>     
+	<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script> 
+	
+
+    
+    
+    
+
+
 
   </head>
 
 <body>
 
-<div id="header">
-<%= render 'layouts/header' %>
-</div>
 
-<div class="colmask threecol">
-	<div class="colmid">
-		<div class="colleft">
+<div id="main">
+    <div id = "header">
+        <div id="logo">
+        <%=link_to image_tag("logo.png"), root_path%>
+        </div>
+        <div id="title">
+        <%= image_tag("title.png")%>
+        </div>
+        <div id="menu">
+        <%= render 'layouts/menu' %>
+        </div>
+    </div>
 
-			<div class="col1">
-				<h1><%= @header %></h1>
+    <div class="clearboth">
+        <!-- <h1><%= @header %></h1> -->	
         <%= yield %>
-				<!-- Column 1 end -->
-			</div>
+    </div>
+    <div id="footer">
+        <%= render 'layouts/footer' %>
+    </div>
+</div>
 
-			<div class="col2">
-				<!-- Column 2 start -->
-		    <%= render 'layouts/menu' %>
-		    <!-- Column 2 end -->
-			</div>
-			
-      <div class="col3">
-				<!-- Column 3 start -->
-        <%= render 'layouts/picture' %>
-				<!-- Column 3 end -->
-			</div>
-		</div>
-	</div>
-</div>
-<div id="footer">
-<%= render 'layouts/footer' %>
-</div>
 
 </body>
+
 </html>
+
+
